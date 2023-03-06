@@ -1,6 +1,6 @@
 # CMPS 2200 Assignment 2
 
-**Name:**_________________________
+**Name:**____Kyra Zhu_________________
 
 In this assignment we'll work on applying the methods we've learned to analyze recurrences, and also see their behavior
 in practice. As with previous
@@ -13,7 +13,7 @@ and push to your github repository.
 1. Derive asymptotic upper bounds of work for each recurrence below.
   * $W(n)=2W(n/3)+1$
 .  
-.  
+.  **Please check *assignment-02 2.pdf***
 .  
 .  
 .  
@@ -79,6 +79,14 @@ and push to your github repository.
 
     What are the asymptotic running times of each of these algorithms?
     Which algorithm would you choose?
+
+**Algorithm A's asymptotic running time is T(n) = O(n^log2 5). T(n) = 5T (n / 2) + O is the recurrence relation (n) so that T(n) = n^log2 5 with a=5 and b=2.**
+
+**Algorithm B's asymptotic running time is T(n) = O(2^n). T(n) = 2T (n - 1) +1 is the recurrence relation so that T(n) = O(2n).**
+
+**Algorithm C's asymptotic running time is T(n) = O(n^2 lg n). The relationship between occurrences is T(n) = 9T (n/3) + n^2. When a=3 and b=9 are used to solve this recurrence, we got T(n) = O(n^2 lg n).**
+
+**Applying the limit and L'Hopital's rule to A and C of them would result in $n^2lg_{3} n$ based on the asymptotic running time. I would select algorithm C to be much more efficient.**
 
 
 3. Now that you have some practice solving recurrences, let's work on
